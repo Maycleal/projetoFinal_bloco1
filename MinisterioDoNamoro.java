@@ -1,6 +1,8 @@
 package projetoFinal_bloco1;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
     public class MinisterioDoNamoro {
 	
@@ -47,53 +49,65 @@ import java.util.Scanner;
 	            case 1:
 	                System.out.println("Você escolheu namorar homens.");
 	                
-                    String vetorCaracter1[] = new String[5];
-	                
-	                for(int indice = 0; indice < 5; indice ++) {
-	                    System.out.println("Digite a " + (indice + 1)  +"º característica que você procura no seu parceiro: ");
-	                    vetorCaracter1[indice] = leia.next();
+	                ArrayList<String> caracter = new ArrayList<String>();
+
+	                int contador;
+
+	                for(contador = 1; contador < 6; contador++) {
+	                	System.out.println("\nDigite a " + contador + "º característica que você procura no seu parceiro: ");
+	                	caracter.add(leia.next());
+	                			
 	                }
+
+	                System.out.println("\nAs caracteristicas digitas foram: \n" + caracter);
+
+	                Collections.sort(caracter);
+
+	                System.out.println("\nA lista das caracteristicas ordenadas:\n" + caracter);
 	                
-	                System.out.println("\nAs caracteristicas digitas foram: \n");
-	                
-	                for(int indice = 0; indice < 5; indice++) {
-	                    System.out.println(vetorCaracter1[indice]);
-	                }
 	                              
 	                break;
 	            
 	            case 2:
 	                System.out.println("Você escolheu namorar mulheres.");
 	                
-                      String vetorCaracter2[] = new String[5];
-	                
-	                for(int indice = 0; indice < 5; indice ++) {
-	                    System.out.println("Digite a " + (indice + 1)  +"º característica que você procura na sua parceira: ");
-	                    vetorCaracter2[indice] = leia.next();
+	                ArrayList<String> caracter1 = new ArrayList<String>();
+
+	                int contador1;
+
+	                for(contador1 = 1; contador1 < 6; contador1++) {
+	                	System.out.println("\nDigite a " + contador1 + "º característica que você procura na sua parceira: ");
+	                	caracter1.add(leia.next());
+	                			
 	                }
+
+	                System.out.println("\nAs caracteristicas digitas foram: \n" + caracter1);
+
+	                Collections.sort(caracter1);
+
+	                System.out.println("\nA lista das caracteristicas ordenadas:\n" + caracter1);
 	                
-	                System.out.println("\nAs caracteristicas digitas foram: \n");
-	                
-	                for(int indice = 0; indice < 5; indice++) {
-	                    System.out.println(vetorCaracter2[indice]);
-	                }	               
 	                break;
 	                
 	            case 3:
 	                System.out.println("Você escolheu namorar homens e mulheres.");
 	                
-	                String vetorCaracter3[] = new String[5];
-	                
-	                for(int indice = 0; indice < 5; indice ++) {
-	                    System.out.println("Digite a " + (indice + 1)  +"º característica que você procura no seu parceiro(a): ");
-	                    vetorCaracter3[indice] = leia.next();
+	                ArrayList<String> caracter2 = new ArrayList<String>();
+
+	                int contador2;
+
+	                for(contador2 = 1; contador2 < 6; contador2++) {
+	                	System.out.println("\nDigite a " + contador2 + "º característica que você procura no seu parceiro(a): ");
+	                	caracter2.add(leia.next());
+	                			
 	                }
+
+	                System.out.println("\nAs caracteristicas digitas foram: \n" + caracter2);
+
+	                Collections.sort(caracter2);
+
+	                System.out.println("\nA lista das caracteristicas ordenadas:\n" + caracter2);
 	                
-	                System.out.println("As caracteristicas digitas foram: ");
-	                
-	                for(int indice = 0; indice < 5; indice++) {
-	                    System.out.println(vetorCaracter3[indice]);
-	                }
 	                break;
 	                
 	            case 4:
@@ -110,7 +124,5 @@ import java.util.Scanner;
 	    }
    
 }
-    }
-    
-    
+    } 
    
